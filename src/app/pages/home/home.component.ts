@@ -1,3 +1,9 @@
+/**
+ * Title: home.component.ts
+ * Author: Chris Bohnet
+ * Date: 23 September 2020
+ * Description: home.component.module
+ */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
