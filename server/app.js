@@ -3,6 +3,8 @@
  * Author: Chris Bohnet
  * Date: 23 September 2020
  * Description: app module
+ * Modifications:
+ * 9/28/20 - Moved app.get empId to its own route file employee.api.js
  */
 /**
  * Require statements
@@ -15,6 +17,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const { send } = require('process');
 const Employee = require('./models/employee');
+const EmployeeApi = require('./routes/employee.api'); //import employee api sets up routes for employee object
 /**
  * App configurations
  */
@@ -52,44 +55,9 @@ mongoose.connect(conn, {
  * API(s) go here ...
  *
  */
-//findEmployeeById
-app.get('/api/employees/:empId', async(req, res) => {
-try {
-  //use the mongoose employee model to query MongoDb Atlas by employeeId
- //use employee model to query db to pull back emp rec to match route parameter
- Employee.findOne({'empId': req.params.empId}, function(err,employee){
-  //if there is a database level error, handle by returning a server 500 error
-  if (err) {
-      console.log(err); //returns only db
-      res.status(500).send({
-        'message': 'internal server error'
-      })
-
-    } else {
-      //if there are no database level errors, return the employee object {}
-      console.log(employee);
-      res.json(employee);
-    }
- })
-
- //empId above has to match what is in get statement and what's in your model and what's in the db
-//findOne returns one document.  find returns more
-
-
-} catch (e) {
-  //catch any potential errors we didn't prepare for
-  console.log(e);
-  res.status(500).send({
-    'message': 'Internal server error'
-  })
-}
-
-})
-//:empId is a placeholder that captures the empid value.  so http://localhsot:3000/api/employees/1012 for example
-//can add multiple parameters so ...../:empId/:dob translates to url of /1012/2020-12-01
-/**
- * Create and start server
- */
+app.use('/api/employees', EmployeeApi);
+ //* Create and start server
+ //*/
 http.createServer(app).listen(port, function() {
   console.log(`Application started and listening on port: ${port}`)
 }); // end http create server function

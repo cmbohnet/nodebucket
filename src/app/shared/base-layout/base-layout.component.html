@@ -1,8 +1,7 @@
-<div fxLayout="column">
-
-  <!-- navigation -->
+<div fxLayout="column" >
+  <!-- navigation   -->
   <nav fxFlex>
-    <mat-toolbar>
+    <mat-toolbar class ="header">
       <!-- navbar container -->
       <div class="navbar-container">
         <!-- logo -->
@@ -15,9 +14,9 @@
     </mat-toolbar>
   </nav>
 
-  <!-- main content -->
+  <!-- main content  fxFlex="100%;"-->
   <div fxFlex>
-    <main class="main-content" fxFlex="100%;">
+    <main class="main-content">
       <router-outlet></router-outlet>
     </main>
   </div>

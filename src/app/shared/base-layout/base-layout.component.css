@@ -1,11 +1,17 @@
 .logo {
   margin-left: 75px;
   font-size: 24px;
-  font-weight: lighter;;
+  font-weight: lighter;
+}
+.header {
+
+  background-color: lemonchiffon;
 }
 
 .navbar-container {
   padding: 5px;
+  color: orange;
+
 }
 
 .navbar-link {
@@ -14,13 +20,14 @@
 }
 
 .main-content {
-  padding-left: 30px;
+ padding-left: 30px;
 }
 
 .footer {
   bottom: 0;
   position: absolute;
   width: 100%;
+
 }
 
 .footer-content {
@@ -28,6 +35,9 @@
   font-weight: lighter;
   padding-left: 100px;
   letter-spacing: 3px;
+  background-color: lemonchiffon;
+  color: orange;
+
 }
 
 .bu-link {

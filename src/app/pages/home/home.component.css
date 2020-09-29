@@ -1,6 +1,14 @@
 .main-welcome {
   margin-top: 30px;
 }
+.main-body {
+  /* Image modified and originally from
+  https://thumbs.dreamstime.com/b/clear-list-paper-colour-pins-white-background-clear-list-paper-colour-pins-white-background-vector-117794176.jpg */
+  background-image: url("../../../assets/postIts.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
 
 .title {
   text-align: center;
