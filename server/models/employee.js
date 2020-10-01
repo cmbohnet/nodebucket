@@ -1,10 +1,12 @@
 /**
- * Title: employee.ts
+ * Title: employee.js
  * Author: Chris Bohnet
  * Date: 23 September 2020
  * Description: employee module
  * Modifications:
- * 9/28/20 - added item schema
+ * 9/28/20 - added item schema - adding two new fields to the employee mongoose model
+ * todo: [Item]
+ * done: [Item]
  */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;

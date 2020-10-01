@@ -1,6 +1,19 @@
-.main-welcome {
-  margin-top: 30px;
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
 }
+
+.grid-container__item {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.main-welcome {
+  margin-top: 10px;
+}
+
 .main-body {
   /* Image modified and originally from
   https://thumbs.dreamstime.com/b/clear-list-paper-colour-pins-white-background-clear-list-paper-colour-pins-white-background-vector-117794176.jpg */
