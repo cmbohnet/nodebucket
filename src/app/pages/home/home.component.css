@@ -15,11 +15,10 @@
 }
 
 .main-body {
-  /* Image modified and originally from
-  https://thumbs.dreamstime.com/b/clear-list-paper-colour-pins-white-background-clear-list-paper-colour-pins-white-background-vector-117794176.jpg */
-  background-image: url("../../../assets/postIts.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  /* Image from https://www.freeimages.com/photo/notepaper-1153084-639x624 */
+  background-image: url("../../../assets/notepaper-1153084-639x624.jpg");
+ /* background-size: 50%; */
+  background-repeat: space;
 
 }
 

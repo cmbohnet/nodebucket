@@ -1,3 +1,10 @@
+/**
+ * Title: base-response.js
+ * Author: Chris Bohnet
+ * Date: 23 September 2020
+ * Description: base-response for error messages
+ * Modifications:
+ */
 class
 ErrorResponse {
   constructor(httpCode, message, data) {

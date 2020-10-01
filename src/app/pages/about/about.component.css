@@ -1,0 +1,28 @@
+.main-welcome {
+  margin-top: 30px;
+}
+
+.main-body {
+  /* Image from https://www.freeimages.com/photo/pin-up-1238883-1279x939 */
+  background-image: url("../../../assets/pin-up-1238883-1279x939.jpg");
+  background-size: 20%;
+  background-position: inherit;
+  background-repeat: no-repeat;
+
+}
+
+.title {
+  text-align: center;
+  font-weight: lighter;
+
+  }
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+}
+
+.about_em {
+  text-align: center;
+  font-size: 16px;
+}

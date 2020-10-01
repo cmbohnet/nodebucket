@@ -12,6 +12,7 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
 import {AuthGuard} from './shared/auth.guard';
 //import { NotFoundComponent } from './not-found/not-found.component';
 import { SigninComponent } from './pages/signin/signin.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {
@@ -22,9 +23,14 @@ const routes: Routes = [
         path: '',
         component: HomeComponent,
         canActivate: [AuthGuard]
+      },
+      {
+        path: 'about',
+        component: AboutComponent
       }
     ],
   },
+
   {
     path: 'session',
     component: AuthLayoutComponent,
@@ -33,6 +39,7 @@ const routes: Routes = [
         path: 'signin',
         component: SigninComponent
       }
+
     ]
   },
 ];

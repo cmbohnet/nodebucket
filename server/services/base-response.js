@@ -1,3 +1,10 @@
+/**
+ * Title: base-response.js
+ * Author: Chris Bohnet
+ * Date: 23 September 2020
+ * Description: base-response for general status messages
+ * Modifications:
+ */
 class
 BaseResponse {
   constructor(httpCode, message, data) {
