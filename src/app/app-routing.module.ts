@@ -10,9 +10,9 @@ import { BaseLayoutComponent } from './shared/base-layout/base-layout.component'
 import { HomeComponent } from './pages/home/home.component';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import {AuthGuard} from './shared/auth.guard';
-//import { NotFoundComponent } from './not-found/not-found.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { AboutComponent } from './pages/about/about.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -25,10 +25,14 @@ const routes: Routes = [
         canActivate: [AuthGuard]
       },
       {
+        path: 'not-found',
+        component: NotFoundComponent
+      },
+      {
         path: 'about',
         component: AboutComponent
       }
-    ],
+    ]
   },
 
   {
