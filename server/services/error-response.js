@@ -1,8 +1,8 @@
 /**
- * Title: base-response.js
+ * Title: error-response.js
  * Author: Chris Bohnet
  * Date: 23 September 2020
- * Description: base-response for error messages
+ * Description: error-response for error messages
  * Modifications:
  */
 class

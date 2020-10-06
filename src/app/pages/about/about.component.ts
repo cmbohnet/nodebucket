@@ -1,7 +1,7 @@
 /**
  * Title: about.component.ts
  * Author: Chris Bohnet
- * Date: 6 August 2020
+ * Date: 2 October 2020
  * Description: About component (About page)
  */
 

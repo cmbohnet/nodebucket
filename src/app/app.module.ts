@@ -27,6 +27,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {CookieService} from 'ngx-cookie-service';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,10 @@ import {CookieService} from 'ngx-cookie-service';
     ReactiveFormsModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    DragDropModule,
+    MatDividerModule,
+    DragDropModule
   ],
   providers: [CookieService],
 

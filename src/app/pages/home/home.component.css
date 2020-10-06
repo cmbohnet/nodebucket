@@ -17,9 +17,8 @@
 .main-body {
   /* Image from https://www.freeimages.com/photo/notepaper-1153084-639x624 */
   background-image: url("../../../assets/notepaper-1153084-639x624.jpg");
- /* background-size: 50%; */
+  /* background-size: 50%; */
   background-repeat: space;
-
 }
 
 .title {

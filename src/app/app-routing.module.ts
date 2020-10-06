@@ -15,7 +15,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  {
+  { //base layout
     path: '',
     component: BaseLayoutComponent,
     children: [
@@ -34,7 +34,7 @@ const routes: Routes = [
       }
     ]
   },
-
+//session
   {
     path: 'session',
     component: AuthLayoutComponent,
@@ -42,10 +42,16 @@ const routes: Routes = [
       {
         path: 'signin',
         component: SigninComponent
-      }
+      },
+
+
 
     ]
   },
+  {
+    path:'**',
+    redirectTo: 'session/not-found'
+  }
 ];
 
 @NgModule({

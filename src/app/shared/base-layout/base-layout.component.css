@@ -23,6 +23,15 @@
  padding-left: 30px;
 }
 
+.main-body {
+  padding-left: 30px;
+  /* Image from https://www.freeimages.com/photo/notepaper-1153084-639x624 */
+  background-image: url("../../../assets/notepaper-1153084-639x624.jpg");
+  background-size: 150%;
+  background-repeat: space;
+
+}
+
 .footer {
   bottom: 0;
   position: absolute;
