@@ -9,16 +9,18 @@
   padding: 20px;
   font-size: 30px;
 }
-
+/*
 .main-welcome {
   margin-top: 10px;
 }
-
+*/
 .main-body {
   /* Image from https://www.freeimages.com/photo/notepaper-1153084-639x624 */
   background-image: url("../../../assets/notepaper-1153084-639x624.jpg");
-  /* background-size: 50%; */
-  background-repeat: space;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-repeat: space; */
 }
 
 .title {
@@ -29,4 +31,42 @@
 .subtitle {
   text-align: center;
   font-size: 16px;
+}
+/**
+Task management page custom styles
+*/
+.create-task-container {
+  width: 35%;
+  padding-top: 150px;
+  margin: 0 auto;
+}
+
+.task-container {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.task-list {
+  border: 1px solid #ccc;
+  min-height: 68px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.task-card {
+  cursor: move;
+  padding: 20px 18px;
+  border-bottom: solid 1px #ccc;
+  min-height: 68px;
+  height: 68px;
+  font-size: 14px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-options-menu {
+  margin-top: -10px;
 }

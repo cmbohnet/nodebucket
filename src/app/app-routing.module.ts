@@ -24,10 +24,7 @@ const routes: Routes = [
         component: HomeComponent,
         canActivate: [AuthGuard]
       },
-      {
-        path: 'not-found',
-        component: NotFoundComponent
-      },
+
       {
         path: 'about',
         component: AboutComponent
@@ -43,13 +40,15 @@ const routes: Routes = [
         path: 'signin',
         component: SigninComponent
       },
-
-
+      {
+        path: 'not-found',
+        component: NotFoundComponent
+      }
 
     ]
   },
   {
-    path:'**',
+    path: '**',
     redirectTo: 'session/not-found'
   }
 ];

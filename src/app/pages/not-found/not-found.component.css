@@ -1,0 +1,14 @@
+.main-body {
+  /* Image from https://www.freeimages.com/photo/trash-1240882-640x640.jpg*/
+  background-image: url("../../../assets/trash-1240882-640x640.jpg");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-repeat: space; */
+}
+
+.not-found-container {
+  width: 15%;
+  padding-top: 42%;
+  margin: 0 auto;
+}

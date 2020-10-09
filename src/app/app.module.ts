@@ -29,6 +29,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {CookieService} from 'ngx-cookie-service';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatDividerModule} from '@angular/material/divider';
+import {CreateTaskDialogComponent} from './shared/create-task-dialog/create-task-dialog.component';
+import { MatMenuModule} from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +42,8 @@ import {MatDividerModule} from '@angular/material/divider';
     AuthLayoutComponent,
     SigninComponent,
     AboutComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CreateTaskDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,12 @@ import {MatDividerModule} from '@angular/material/divider';
     MatFormFieldModule,
     DragDropModule,
     MatDividerModule,
-    DragDropModule
+    DragDropModule,
+    MatMenuModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    CreateTaskDialogComponent,
   ],
   providers: [CookieService],
 
